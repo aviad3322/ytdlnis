@@ -148,7 +148,8 @@ class DownloadBottomSheetDialog : BottomSheetDialogFragment() {
         tabLayout = view.findViewById(R.id.download_tablayout)
         viewPager2 = view.findViewById(R.id.download_viewpager)
         updateItem = view.findViewById(R.id.update_item)
-        viewPager2.isUserInputEnabled = sharedPreferences.getBoolean("swipe_gestures_download_card", true)
+        viewPager2.isUserInputEnabled = false
+tabLayout.visibility = View.GONE
 
 
         //loading shimmers
