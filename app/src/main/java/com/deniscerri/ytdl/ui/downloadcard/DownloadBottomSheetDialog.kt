@@ -106,7 +106,7 @@ class DownloadBottomSheetDialog : BottomSheetDialogFragment() {
         val res = downloadCardViewModel.resultItem
         val dwl = downloadCardViewModel.downloadItem
 
-        type = arguments?.getSerializable("type") as DownloadType
+        type = DownloadType.audio
         disableUpdateData = arguments?.getBoolean("disableUpdateData") == true
         ignoreDuplicates = arguments?.getBoolean("ignore_duplicates") == true
 
