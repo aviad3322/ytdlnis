@@ -314,7 +314,7 @@ class DownloadViewModel(private val application: Application) : AndroidViewModel
             compatibilityMode = compatibilityMode,
             embedThumbnail = videoEmbedThumb,
             removeAudio = removeAudio,
-            alsoDownloadAsAudio = alsoDownloadAudio
+                        alsoDownloadAsAudio = false
         )
 
         val extraCommands = when(type){
