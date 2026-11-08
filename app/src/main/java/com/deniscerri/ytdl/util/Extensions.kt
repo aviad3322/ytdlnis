@@ -407,7 +407,7 @@ object Extensions {
     }
 
     fun ImageView.loadBlurryThumbnail(context: Context, hideThumb: Boolean, imageURL: String) {
-        if(!hideThumb){
+        if(false){
             if (imageURL.isNotEmpty()) {
                 Picasso.get()
                     .load(imageURL)
