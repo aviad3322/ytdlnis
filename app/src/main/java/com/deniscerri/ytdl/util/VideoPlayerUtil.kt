@@ -57,13 +57,9 @@ object VideoPlayerUtil {
             .setLoadControl(loadControl)
             .setAudioAttributes(audioAttributes, false)
             .build()
-            .apply {
-                                                skipSilenceEnabled = false
+                        .apply {
+                skipSilenceEnabled = false
                 playbackParameters = PlaybackParameters(1f, 1.0f)
-                trackSelectionParameters = trackSelectionParameters
-                    .buildUpon()
-                    .setTrackTypeDisabled(C.TRACK_TYPE_VIDEO, true)
-                    .build()
                 trackSelectionParameters = trackSelectionParameters
                     .buildUpon()
                     .setTrackTypeDisabled(C.TRACK_TYPE_VIDEO, true)
