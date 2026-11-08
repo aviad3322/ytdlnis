@@ -1067,7 +1067,7 @@ class DownloadViewModel(private val application: Application) : AndroidViewModel
         }
 
         processing.apply {
-            val new = switchDownloadType(this, newType)
+                        val new = switchDownloadType(this, DownloadType.audio)
             new.forEach {
                 repository.update(it)
             }
