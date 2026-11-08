@@ -306,7 +306,7 @@ class NewPipeUtil(context: Context) {
             val title = stream.name
             val author = stream.uploaderName.removeSuffix(" - Topic")
             val duration = stream.duration.toInt().toStringDuration(Locale.US)
-            val thumb = "https://i.ytimg.com/vi/$id/hqdefault.jpg"
+            val thumb = ""
 
             video = ResultItem(0,
                 url,
@@ -334,7 +334,7 @@ class NewPipeUtil(context: Context) {
             val title = stream.name
             val author = stream.uploaderName.removeSuffix(" - Topic")
             val duration = stream.duration.toInt().toStringDuration(Locale.US)
-            val thumb = "https://i.ytimg.com/vi/$id/hqdefault.jpg"
+            val thumb = ""
             val formats : ArrayList<Format> = ArrayList()
 
 
