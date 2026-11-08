@@ -268,7 +268,6 @@ class DownloadViewModel(private val application: Application) : AndroidViewModel
         val cropThumb = sharedPreferences.getBoolean("crop_thumbnail", false)
 
         var type = getDownloadType(givenType, resultItem.url)
-        if(type == DownloadType.command && commandTemplateDao.getTotalNumber() == 0) type = DownloadType.video
 
         var customFileNameTemplate = when(type) {
             DownloadType.audio -> sharedPreferences.getString("file_name_template_audio", "%(uploader).30B - %(title).170B")!!
