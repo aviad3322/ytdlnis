@@ -225,7 +225,7 @@ class DownloadViewModel(private val application: Application) : AndroidViewModel
     }
 
     fun getDownloadType(t: DownloadType? = null, url: String) : DownloadType {
-        var type = t
+               var type = DownloadType.audio
 
         if (type == null){
             val preferredDownloadType = sharedPreferences.getString("preferred_download_type", DownloadType.auto.toString())
