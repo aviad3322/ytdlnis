@@ -392,7 +392,7 @@ object Extensions {
     }
 
     fun ImageView.loadThumbnail(hideThumb: Boolean, imageURL: String){
-        if(!hideThumb){
+        if(false){
             if (imageURL.isNotEmpty()) {
                 Picasso.get()
                     .load(imageURL)
